@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hand Track Rock Paper Scissors</title>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+	<script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script> -->
+
+	<style>
+    .wrapper {
+      text-align: center;
+    }
+
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+	<p>
+  		<div class="wrapper">
+  			<button onclick="startLoop()" style="text-align:center">Start</button>		
+  		</div>
+	</p>
+	<p style="text-align:center">Webcam Rock Paper Scissors:</p>
+	<video autoplay="true" id="videoInput" class="center" style="display: none;"></video>
+		<div id="remoteVideos">
+			<canvas id="videoCanvas" class="center"></canvas>
+		</div>
+
+	<script type="text/javascript" src="./js/track.js"></script>
+</body>
+</html>
